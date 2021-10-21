@@ -1,0 +1,32 @@
+/* 
+Title: Assignment 1.4
+Author: Professor Krasso
+Date: 21 Oct 21
+Modified By: Ferdinand "Papo" Detres Jr
+Description: This is the main css file for Assignment 1.4 which links
+to the index.html file. Code for the css was provided by instructions for 
+Assignment 1.4 in a word doc.
+*/
+
+/* Adds Google font Oswald to everything inside the body element */
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+  }
+/* This div holds everything within the page and sets my margins */
+  #container {
+      margin: 50px 50px 0px 100px;
+  }
+
+/* Adds styling to all my header tags */
+h1, h2, h3, h4 {
+    background-color: #3c275a;
+    color: white;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+/* this targets all my anchor elements under h4 Important Links */
+a {
+    color: #453674;
+    text-decoration: none;
+}

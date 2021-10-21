@@ -1,3 +1,17 @@
+/* 
+Title: Global CSS file
+Author: Professor Krasso
+Date: 21 Oct 21
+Modified By: Ferdinand "Papo" Detres Jr
+Description: This is a global css file with requirements set by 
+web231 assignment requirements
+*/
+
+body {
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+
 #container {
   padding: 10px;
 }
