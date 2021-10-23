@@ -30,3 +30,12 @@ a {
     color: #453674;
     text-decoration: none;
 }
+a:hover {
+  background-color: #d6A800;
+  color: #4f3674;
+
+}
+a:visited {
+  color: #3C275A;
+  text-decoration: none;
+}
