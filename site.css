@@ -25,10 +25,7 @@ h1, h2, h3, h4 {
     padding: 10px;
 }
 
-.return-home {
-  color: #4f3674;
-  text-decoration: none;
-}
+
 /* this targets all my anchor elements under h4 Important Links */
 a {
     color: #453674;
