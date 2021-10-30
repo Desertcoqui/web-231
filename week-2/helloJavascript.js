@@ -10,9 +10,10 @@
 //stackoverflow.com document.getElementByID w onclick
 //https://stackoverflow.com/questions/20941160/javascript-document-getelementbyid-with-onclick
 
-//This targets the #txtMyWorld in the html document and passes a value to the p tag
+//This targets the #txtMyWorld in the html document and passes a value binding .innerHTML
+let myWorld = "Detres\'"
 document.getElementById("txtMyWorld").innerHTML =
-  "You are now in Detres' world!";
+  'You are now in ' + myWorld + ' world!';
 
 //This target the button id btnMyCourse and passes a function to alert
 document.getElementById("btnMyCourse").onclick = function () {
