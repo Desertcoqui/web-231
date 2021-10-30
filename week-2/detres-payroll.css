@@ -7,3 +7,7 @@ Description: CSS for assignment 2.2  */
 #payroll-header{
     text-align: center;
 }
+
+ul {
+    border: 1px dotted red;
+  }
