@@ -10,16 +10,26 @@
 //
 //
 
+//function runs when the onClick property with a value of button() is clicked
 function button() {
-    let rnd = Math.floor((Math.random()* 10) + 1);
-    let myNumber = document.getElementById("txtMyNumber").value;
+  //will hold a random number
+  let rnd = Math.floor(Math.random() * 10 + 1);
+  //will hold the value in put into the input field
+  let myNumber = document.getElementById("txtMyNumber").value;
 
-    if(myNumber > rnd) {
-        document.getElementById("results").innerHTML = ("The number is greater than" +" " + myNumber);
+  //first statement compares if the input variable is greater than the randomly held variable
+  //and prints result if true
+  if (myNumber > rnd) {
+    document.getElementById("results").innerHTML =
+      "The number is greater than" + " " + myNumber;
+    // if false the next statement is applied
+  } else if (myNumber < rnd) {
+    document.getElementById("results").innerHTML =
+      "The number is less than" + " " + myNumber;
 
-    } else if (myNumber < rnd){
-        document.getElementById("results").innerHTML = ("The number is less than" +" " + myNumber);
-    } else {
-        document.getElementById("results").innerHTML = ("Congratulations! You picked the correct number!");
-    }
+    //final statement is applied since first two statements are false
+  } else {
+    document.getElementById("results").innerHTML =
+      "Congratulations! You picked the correct number!";
+  }
 }
