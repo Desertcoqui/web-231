@@ -1,0 +1,135 @@
+<!-- 
+Title: Assignment 6 In-n-Out Books
+Author: Professor Krasso
+Date: 26 Nov 21
+Modified By: Ferdinand "Papo" Detres Jr
+Description: This week's project is to object literals that display
+my favorite books and authors
+Code Attributions: The classes and id's were taken from the CSS style guide provided by Prof Krasso.
+https://www.w3schools.com/tags/tag_select.asp
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>WEB 231 - Enterprise JavaScript I</title>
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+
+    <link rel="stylesheet" type="text/css" href="in-n-out-books.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="app-header">
+            Welcome to In-N-Out-Books
+
+        </h1>
+        <div id="card-example">
+            <div class="card">
+                <div class="card-title">
+                    My Favorite
+                </div>
+                <div class="card-content">
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="favoriteList">
+                                Choose a listing:
+                            </label>
+                            <!-- <select class="drop-down-menu" id="sequence" name="--Select--"> -->
+                            <select class="drop-down-menu" id="favoriteList" name="--Select--">
+                                <option value="select">--Select--</option>
+                                <!-- <option value="fibonacci">Fibonacci</option> -->
+                                <option value="books">Top 3 Favorite Books</option>
+                                <!-- <option value="even">Even Numbers</option> -->
+                                <option value="authors">Top 3 Favorite Authors</option>
+
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <!-- <button id="btnDisplaySequence" class="btn btn-primary full-width" onclick="button()"> -->
+                            <button id="btnDisplayListing" class="btn btn-primary full-width" onclick="button()">
+                                Display Listing
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <a class="return-home" href="../index.html">Return</a>
+            </div>
+        </div>
+
+
+        <div id="card-example2">
+            <div class="card">
+                <div class="card-title" id="topFavoriteBooks">
+                </div>
+                <div class=" card-title card-content" id="results">
+                    <table id="books">
+                        <tr>
+                            <th id="isbn"></th>
+                            <th id="title"></th>
+                            <th id="pages"></th>
+                        </tr>
+                        <tr>
+                            <td id="ofMiceAndMenIsbn"></td>
+                            <td id="ofMiceAndMenTitle"></td>
+                            <td id="ofMiceAndMenPages"></td>
+                        </tr>
+                        <tr>
+                            <td id="blackBeautyIsbn"></td>
+                            <td id="blackBeautyTitle"></td>
+                            <td id="blackBeautyPages"></td>
+                        </tr>
+                        <tr>
+                            <td id="childrenIsbn"></td>
+                            <td id="childrenTitle"></td>
+                            <td id="childrenPages"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="card-example3">
+            <div class="card">
+                <div class="card-title" id="favoriteAuthors">
+                </div>
+                <div class=" card-title card-content" id="results">
+                    <table id="authors">
+                        <tr>
+                            <th id="name"></th>
+                            <th id="genre"></th>
+                        </tr>
+                        <tr>
+                            <td id="winston"></td>
+                            <td id="winstonGenre"></td>
+                           
+                        </tr>
+                        <tr>
+                            <td id="greenSpan"></td>
+                            <td id="greenSpanGenre"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td id="powell"></td>
+                            <td id="powellGenre"></td>
+                            
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="in-n-out-books.js"></script>
+    </div>
+</body>
+
+</html>
