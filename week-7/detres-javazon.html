@@ -1,0 +1,212 @@
+<!-- 
+description: Assignment 7 Javazon App
+Author: Professor Krasso
+Date:5 Dec 21
+Modified By: Ferdinand "Papo" Detres Jr
+Description: This week's project we will use classes and objects
+Code Attributions: The classes and id's were taken from the CSS style guide provided by Prof Krasso.
+https://www.w3schools.com/tags/tag_select.asp
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>WEB 231 - Enterprise JavaScript I</title>
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+
+    <link rel="stylesheet" type="text/css" href="detres-javazon.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="app-header">
+            Welcome to the Javazon App!
+
+        </h1>
+        <div id="card-example">
+            <div class="card">
+                <div class="card-description">
+                    Javazon Selection Form
+                </div>
+                <div class="card-content">
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="listing">
+                                Choose a listing:
+                            </label>
+
+                            <select class="drop-down-menu" id="listing" name="--Select--">
+                                <option value="select">-Select-</option>
+
+                                <option value="products">Products</option>
+
+                                <option value="services">Services</option>
+                                <option value="employees">Employees</option>
+
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <!-- <button id="btnDisplaySequence" class="btn btn-primary full-width" onclick="button()"> -->
+                            <button id="btnDisplayListing" class="btn btn-primary full-width" onclick="button()">
+                                Display Listing
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <a class="return-home" href="../index.html">Return</a>
+            </div>
+        </div>
+
+
+        <div id="card-example2">
+            <div class="card">
+                <div class="card-description" id="products">
+                </div>
+                <div class=" card-description card-content" id="results">
+                    <table id="books">
+                        <tr>
+                            <th id="productID"></th>
+                            <th id="description"></th>
+                            <th id="price"></th>
+                            <th id="quantity"></th>
+                            <th id="total"></th>
+                        </tr>
+                        <tr>
+                            <td id="hackerToolsProductId"></td>
+                            <td id="hackerToolsDescription"></td>
+                            <td id="hackerToolsPrices"></td>
+                            <td id="hackerToolsQuantity"></td>
+                            <td id="hackerToolsTotalValue"></td>
+                        </tr>
+                        <tr>
+                            <td id="hackerMoviesProductId"></td>
+                            <td id="hackerMoviesDescription"></td>
+                            <td id="hackerMoviesPrices"></td>
+                            <td id="hackerMoviesQuantity"></td>
+                            <td id="hackerMoviesTotalValue"></td>
+                        </tr>
+                        <tr>
+                            <td id="mouseProductId"></td>
+                            <td id="mouseDescription"></td>
+                            <td id="mousePrices"></td>
+                            <td id="mouseQuantity"></td>
+                            <td id="mouseTotalValue"></td>
+                        </tr>
+                        <tr>
+                            <td id="mouse2ProductId"></td>
+                            <td id="mouse2Description"></td>
+                            <td id="mouse2Prices"></td>
+                            <td id="mouse2Quantity"></td>
+                            <td id="mouse2TotalValue"></td>
+                        </tr>
+                        <tr>
+                            <td id="mouse3ProductId"></td>
+                            <td id="mouse3Description"></td>
+                            <td id="mouse3Prices"></td>
+                            <td id="mouse3Quantity"></td>
+                            <td id="mouse3TotalValue"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="card-example3">
+            <div class="card">
+                <div class="card-description" id="services">
+                </div>
+                <div class=" card-description card-content">
+                    <table id="authors">
+                        <tr>
+                            <th id="servicesId"></th>
+                            <th id="servicesDescription"></th>
+                            <th id="servicesHourlyRate"></th>
+                            <th id="servicesMin"></th>
+                        </tr>
+                        <tr>
+                            <td id="moppingId"></td>
+                            <td id="moppingDescription"></td>
+                            <td id="moppingHourlyRate"></td>
+                            <td id="moppingMin"></td>
+
+                        </tr>
+                        <tr>
+                            <td id="vacuumId"></td>
+                            <td id="vacuumDescription"></td>
+                            <td id="vacuumHourlyRate"></td>
+                            <td id="vacuumMin"></td>
+
+                        </tr>
+                        <tr>
+                            <td id="waxId"></td>
+                            <td id="waxDescription"></td>
+                            <td id="waxHourlyRate"></td>
+                            <td id="waxMin"></td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="card-example4">
+            <div class="card">
+                <div class="card-description" id="employees">
+                </div>
+                <div class=" card-description card-content">
+                    <table id="employ">
+                        <tr>
+                            <th id="employeeId"></th>
+                            <th id="employeeLast"></th>
+                            <th id="employeeFirst"></th>
+                            <th id="employeeSalary"></th>
+                        </tr>
+                        <tr>
+                            <td id="timID"></td>
+                            <td id="timFirst"></td>
+                            <td id="timLast"></td>
+                            <td id="timSalary"></td>
+
+                        </tr>
+                        <tr>
+                            <td id="tomID"></td>
+                            <td id="tomFirst"></td>
+                            <td id="tomLast"></td>
+                            <td id="tomSalary"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td id="tamID"></td>
+                            <td id="tamFirst"></td>
+                            <td id="tamLast"></td>
+                            <td id="tamSalary"></td>
+                        </tr>
+                        <tr>
+                            <td id="temID"></td>
+                            <td id="temFirst"></td>
+                            <td id="temLast"></td>
+                            <td id="temSalary"></td>
+                        </tr>
+                        <tr>
+                            <td id="tumID"></td>
+                            <td id="tumFirst"></td>
+                            <td id="tumLast"></td>
+                            <td id="tumSalary"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="detres-javazon.js"></script>
+    </div>
+</body>
+</html>
