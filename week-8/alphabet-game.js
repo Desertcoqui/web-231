@@ -7,7 +7,7 @@
 // https://www.w3schools.com/js/js_if_else.asp
 //https://www.codegrepper.com/code-examples/javascript/javascript+alphabet+array
 
-// assigned variables to three set of DIVs
+// assigned variables to two set of DIVs
 let cardLetters = document.getElementById("card-example2");
 let result = document.getElementById("card-example3");
 
@@ -44,12 +44,11 @@ let alphabet = [
   "Z",
 ];
 function button() {
-  let pos = document.getElementById("txtPosition").value;
-  let alphabetArray = "";
-  let letter = alphabet[pos - 1];
+  let pos = document.getElementById("txtPosition").value; //holds input value
+  let alphabetArray = ""; //empty string which will append alphabet array
+  let letter = alphabet[pos - 1]; //tying input value minus index of 1 to a letter in array
 
-
-
+  //loop for alphabetArray variable which separate each index of the array
   for (let i in alphabet) {
     alphabetArray += alphabet[i] + ", ";
   }
@@ -57,15 +56,16 @@ function button() {
 
   // console.log(alphabet);
 
+  //compares input to undefined
   if (letter == undefined) {
     document.getElementById("finalResults").innerHTML =
       "There are not " + pos + " letters in the alphabet";
-      cardLetters.style.display = "block";
-      result.style.display = "block";
+    cardLetters.style.display = "block";
+    result.style.display = "block";
   } else {
     document.getElementById("finalResults").innerHTML =
       letter + " is at position " + pos + " in the alphabet";
-      cardLetters.style.display = "block";
-      result.style.display = "block";
+    cardLetters.style.display = "block";
+    result.style.display = "block";
   }
 }
