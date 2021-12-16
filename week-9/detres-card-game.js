@@ -10,13 +10,13 @@ class Card {
     this.face = face;
     this.suit = suit;
   }
-};
+}
 
 class Dealer {
   constructor() {
     getDeckOfCards();
   }
-};
+}
 
 var card_count = 52;
 var cards = [];
@@ -41,24 +41,25 @@ function shuffle() {
 }
 
 function buildPlayerCard(card, suitIcon, faceColor, suitColor) {
-  return `<div class="card player-card">
-<div class="card-description card-title"
-    style="color: ${faceColor}; text-align:left; font-size:20px; padding-left:10px;">
-    
-    ${card.face}
-</div>
-<div class="card-description card-content material-icons" id="shuffledCards"
-    style="font-size: 28px; padding-bottom: 25px;">
-    <span class="${suitIcon}" style="color: ${suitColor};"></span>
-</div>`;
+  return `
+  <div class="card player-card">
+        <div class="card-title" style="text-align: left; font-size: 20;padding-left: 10px; color:${faceColor}">
+        ${card.face}
+            <div class="card-content" style="font: size 28px; padding-bottom: 25px;">
+                <span class="${suitIcon}" style="color: ${suitColor}"></span>
+            </div>
+
+        </div>
+
+    </div>
+     
+    `;
 }
-
-
 
 function button() {
   let cardOutputWithIcon = "";
   var dealer = new Dealer();
-shuffle();
+  shuffle();
   for (let card of cards) {
     switch (card.suit) {
       case "H":
@@ -72,7 +73,7 @@ shuffle();
       case "D":
         cardOutputWithIcon += buildPlayerCard(
           card,
-          "mdi mdi-cards-diamonds",
+          "mdi mdi-cards-diamond",
           "red",
           "red"
         );
@@ -80,7 +81,7 @@ shuffle();
       case "C":
         cardOutputWithIcon += buildPlayerCard(
           card,
-          "mdi mdi-cards-clubs",
+          "mdi mdi-cards-club",
           "black",
           "black"
         );
@@ -96,5 +97,5 @@ shuffle();
 
     console.log(card);
   }
-  document.getElementById("output").innerHTML = cardOutputWithIcon;
+  document.getElementById("player-card").innerHTML = cardOutputWithIcon;
 }

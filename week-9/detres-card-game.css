@@ -6,55 +6,63 @@
 /* Online code attributions */
 /* https://www.w3schools.com/cssref/pr_border-collapse.asp  */
 /* https://www.w3schools.com/css/css_table.asp */
-
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
 
 .app-header {
-
-    text-align: center;
-    font-size: 28px;
+  text-align: center;
+  font-size: 28px;
 }
 .card-content {
-    padding: 0;
+  padding: 0;
 }
 .card-description {
-    text-align: center;
-    color: #4F3674;
+  text-align: center;
+  color: #4f3674;
 
-    font-size: 28px;
+  font-size: 28px;
 }
 
-tr{
-    color: black;
+tr {
+  color: black;
 }
 
 th {
-    padding: 12px 0px 12px 6px;
-    text-align: left;
-    background-color: #4F3674;
-    color: white;
-    border: 1px solid #ddd;
-    font-size: 20px;
+  padding: 12px 0px 12px 6px;
+  text-align: left;
+  background-color: #4f3674;
+  color: white;
+  border: 1px solid #ddd;
+  font-size: 20px;
 }
 
 td {
-    border: 1px solid #ddd;
-    text-align: left;
-    font-size: 20px;
-    padding: 12px 0px 6px 6px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 20px;
+  padding: 12px 0px 6px 6px;
 }
 
-#books, #authors, #employ {
-border-collapse: collapse;
-width: 100%;
-margin-bottom: 30px;
+#books,
+#authors,
+#employ {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.player-card {
-    text-align: center;
+#player-card {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+  row-gap: 10px;
+  column-gap: 10px;
+  
 }
-
+.card-content {
+    
+}
 tr:hover {
-    background-color: #d6a800;
-    color: #4F3674;
-    cursor: pointer;
+  background-color: #d6a800;
+  color: #4f3674;
+  cursor: pointer;
 }
