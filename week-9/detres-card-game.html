@@ -1,0 +1,81 @@
+<!-- 
+description: Assignment 9 card game
+Author: Professor Krasso
+Date: 14 Dec 21
+Modified By: Ferdinand "Papo" Detres Jr
+Description: This week's project we will use arrays, loops, classes, function and switch statements to 
+//make a random 52 card generator
+Code Attributions: The classes and id's were taken from the CSS style guide provided by Prof Krasso.
+https://www.w3schools.com/tags/tag_select.asp
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>WEB 231 - Enterprise JavaScript I</title>
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+
+    <link rel="stylesheet" type="text/css" href="detres-card-game.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="app-header">
+            Welcome to the Card Game!
+        </h1>
+        <div id="card-example">
+            <div class="card">
+                <div class="card-description">
+                    Card Dealer
+                </div>
+                <div class="card-content">
+                    <div class="form">
+                        <div class="form-field">
+                            <button id="btnDealCards" class="btn btn-primary full-width" onclick="button()">
+                                Deal Cards
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <a class="return-home" href="../index.html">Return</a>
+            </div>
+        </div>
+
+
+        <div id="card-example2">
+            <div class="card player-card" id='output'>
+                <div class="card-description card-title " id="card-title">
+                    Shuffled Cards
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <script src="detres-card-game.js"></script>
+    </div>
+
+    
+
+
+
+
+
+
+
+</body>
+
+</html>
